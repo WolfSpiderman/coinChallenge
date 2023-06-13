@@ -19,7 +19,7 @@ const tasks = [
   {
     task: 'Top 5 (or Top 3) Takeaways!',
     description: 'List your top 5 episodes! Or top 3 serial killer episodes, top 3 cult episodes, top 3 STDP stories, top 3 Behind The Sucks, top 3 Timesuck genres, etc.',
-    image: ''
+    image: '/images/top5.jpg'
   }
 ];
 

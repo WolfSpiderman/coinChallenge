@@ -8,16 +8,19 @@ const submitForm = async (event) => {
   const name = document.getElementById("name").value;
 
   // Create a new FormData object and append the input values
-  const formData = new FormData();
-  formData.append("suggestion", suggestion);
-  formData.append("description", description);
-  formData.append("username", name);
+  const formData = {
+    suggestion: suggestion,
+    description: description,
+    username: name
+  }
 
+  console.log(formData);
   try {
     // Send a POST request with the form data to the backend endpoint
-    const response = await fetch("/whipple", {
+    const response = await fetch("/api/suggestions/whipple", {
       method: "POST",
-      body: formData,
+      body: JSON.stringify(formData),
+      headers: { 'Content-Type': 'application/json' },
     });
 
     if (!response.ok) {
