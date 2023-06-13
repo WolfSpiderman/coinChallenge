@@ -41,3 +41,9 @@ generateTaskButton.addEventListener('click', () => {
   const taskImage = document.querySelector('#taskImage');
   taskImage.setAttribute('src', randomTask.image);
 });
+
+const suggestionsButton = document.getElementById("suggestions-button");
+
+  suggestionsButton.addEventListener("click", () => {
+    window.location.href = "/suggestions";
+  });
