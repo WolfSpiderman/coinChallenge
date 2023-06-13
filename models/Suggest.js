@@ -1,13 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Suggest extends Model {
-    suggestModel = {
-        formatDate: function() {
-            return this.created_at.toLocaleDateString();
-        }
-    }
-};
+class Suggest extends Model {};
 
 Suggest.init(
     {
