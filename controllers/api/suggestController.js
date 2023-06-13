@@ -10,7 +10,7 @@ router.get('/whipple', async (req, res) => {
     }
 });
 
-router.post('/whipple/apple/banana/nimrod', async (req, res) => {
+router.post('/whipple', async (req, res) => {
     try {
         const suggestData = await Suggest.create(req.body);
         res.status(200).json(suggestData);
