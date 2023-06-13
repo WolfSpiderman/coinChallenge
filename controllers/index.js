@@ -5,8 +5,8 @@ const apiRoutes = require('./api');
 
 router.use('/api', apiRoutes);
 
-router.get('/', res.render('randomTask'));
+router.get('/', (req, res) => res.render('randomTask'));
 
-router.get('/suggestions', res.render('suggest'));
+router.get('/suggestions', (req, res) => res.render('suggest'));
 
 module.exports = router;
