@@ -30,7 +30,8 @@ const submitForm = async (event) => {
     // Handle the response from the backend
     const data = await response.json();
     console.log(data); 
-    alert('Thank you!')
+    alert('Suggestion successfully sent! Thank you!');
+    window.location.href = "/";
   } catch (error) {
     console.error(error);
   }
