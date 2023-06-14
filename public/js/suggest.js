@@ -29,7 +29,8 @@ const submitForm = async (event) => {
 
     // Handle the response from the backend
     const data = await response.json();
-    console.log(data); // do something with the response data
+    console.log(data); 
+    alert('Thank you!')
   } catch (error) {
     console.error(error);
   }

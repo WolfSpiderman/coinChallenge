@@ -1,5 +1,5 @@
 :root {
-    --primary: #bcbc16;
+    --primary: #eeee1e;
     --secondary: #939393;
     --tertiary: #1b00c9;
     --quatrinary: #6c6b67;
@@ -36,7 +36,7 @@
     color: var(--light);
   }
   
-  header img {
+  header img, footer img {
     width: 100vw;
 }
 
@@ -186,4 +186,11 @@ input {
   
   .hidden {
     display: none;
+  }
+
+  footer {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
