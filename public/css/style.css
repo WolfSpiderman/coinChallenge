@@ -1,10 +1,10 @@
 :root {
-    --primary: #eeee1e;
+    --primary: #ecc66c;
     --secondary: #939393;
-    --tertiary: #1b00c9;
-    --quatrinary: #6c6b67;
-    --light: #e3e4e3;
-    --dark: #182c23;
+    --tertiary: #bc5032;
+    --quatrinary: #f3ead9;
+    --light: #6fbecd;
+    --dark: #4e5885;
     --error: rgb(228, 46, 1);
     --border-radius: 0.3rem;
   }
@@ -36,8 +36,13 @@
     color: var(--light);
   }
   
-  header img, footer img {
+  header img {
     width: 100vw;
+    padding-bottom: 25px;
+}
+
+footer img {
+  width: 100vw;
 }
 
   /* main {
@@ -190,7 +195,7 @@ input {
   }
 
   footer {
-    background-color: var(--primary);
+    background-color: var(--tertiary);
     display: flex;
     flex-direction: column;
     align-items: center;
