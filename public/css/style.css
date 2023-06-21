@@ -287,4 +287,8 @@ button {
   footer p {
     font-size: 20px;
   }
+
+  main {
+    min-height: 50vh;
+  }
 }
