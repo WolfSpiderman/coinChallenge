@@ -273,3 +273,18 @@ button {
     min-width: 196px;
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    height: 250px;
+  }
+
+  footer {
+    height: 150px;
+    justify-content: space-between;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+}
