@@ -180,7 +180,12 @@ footer img {
 
 input {
   width: 100%;
-  margin: 5px;
+  margin: 10px 5px;
+}
+
+label {
+  margin: 10px;
+  color: black;
 }
   /* LAYOUT */
   .container {
@@ -211,13 +216,17 @@ input {
     min-width: 60vw;
 }
 
+button {
+  margin-top: 8px;
+}
+
 /* <!-- HTML !-->
 <button class="button-64" role="button"><span class="text">Button 64</span></button> */
 
 /* CSS */
 .button-64 {
   align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  background-image: linear-gradient(144deg, var(--primary), var(--dark) 50%, var(--tertiary));
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
