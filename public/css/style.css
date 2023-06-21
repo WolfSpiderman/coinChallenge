@@ -221,6 +221,11 @@ button {
   margin-top: 8px;
 }
 
+.card p {
+  margin: 5px;
+  color: black;
+}
+
 /* <!-- HTML !-->
 <button class="button-64" role="button"><span class="text">Button 64</span></button> */
 
